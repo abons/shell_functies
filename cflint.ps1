@@ -6,7 +6,7 @@ java -jar C:\dev\CFLint-1.5.0-all.jar -stdout -text -includeRule "ARG_VAR_CONFLI
 echo "yoobi_v2\handlers"
 java -jar C:\dev\CFLint-1.5.0-all.jar -stdout -text -includeRule "ARG_VAR_CONFLICT,MISSING_VAR,NESTED_CFOUTPUT" -folder yoobi_v2\handlers
 echo "model"
-java -jar C:\dev\CFLint-1.5.0-all.jar -stdout -text -includeRule "ARG_VAR_CONFLICT,MISSING_VAR,NESTED_CFOUTPUT,AVOID_USING_GETINSTANCE" -folder model
+java -jar C:\dev\CFLint-1.5.0-all.jar -stdout -text -includeRule "ARG_VAR_CONFLICT,MISSING_VAR,NESTED_CFOUTPUT,AVOID_USING_GETINSTANCE,MISSING_SEMI" -folder model
 #Read-Host -Prompt "Press any key to continue or CTRL+C to quit"
 #java -jar C:\dev\CFLint-1.5.0-all.jar -stdout -text -rulegroups BugProne -folder model
 #Read-Host -Prompt "Press any key to continue or CTRL+C to quit"
@@ -15,3 +15,5 @@ java -jar C:\dev\CFLint-1.5.0-all.jar -stdout -text -includeRule "ARG_VAR_CONFLI
 #java -jar C:\dev\CFLint-1.5.0-all.jar -stdout -text -rulegroups BugProne -folder yoobi_v2\handlers
 #Read-Host -Prompt "Press any key to continue or CTRL+C to quit"
 #java -jar C:\dev\CFLint-1.5.0-all.jar -stdout -text -rulegroups BugProne -folder model
+
+#java -jar C:\dev\CFLint-1.5.0-all.jar -stdout -text -file C:\dev\www\yoobi\model\KipService.cfc -includeRule "MISSING_SEMI"
